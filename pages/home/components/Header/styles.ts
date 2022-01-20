@@ -15,8 +15,11 @@ export const HeaderInputWrapper = style.div`
 export const CustomHeader = style.header`
   background-image: url(${backGroundImg.src});
   background-position: center; 
-  height: 600px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+`
+export const HeaderTitle = style.h1`
+  margin-bottom: 6px;
 `

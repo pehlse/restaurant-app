@@ -10,7 +10,7 @@ export const Header = () => {
           <img src={logo.src} alt="Logo get in"/>
         </div>
         <div>
-          <h1>Descubra novos sabores</h1>
+          <S.HeaderTitle>Descubra novos sabores</S.HeaderTitle>
           <h2>Aqui eu converso com você sobre nossa proposta</h2>
         </div>
       </S.HeaderWrapper>
