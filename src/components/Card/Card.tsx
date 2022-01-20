@@ -9,8 +9,8 @@ interface PropsCard {
 export const Card = ({restaurant}: PropsCard) => {
   return (
     <Link href={`/about/${restaurant.id}`}>
-      <S.CardWrapper>
-        <S.CardTitle>teste</S.CardTitle>
+      <S.CardWrapper backGround={restaurant.image} >
+        <S.CardTitle>{restaurant.name}</S.CardTitle>
       </S.CardWrapper>
     </Link>
   )
