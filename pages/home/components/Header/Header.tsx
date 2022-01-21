@@ -2,7 +2,7 @@ import logo from '../../../../public/logo.png'
 import { Input } from '../../../../src/components/Input/Input'
 import * as S from './styles'
 
-export const Header = () => {
+export const Header = ({setSearch = (search: string) => {}}) => {
   return (
     <S.CustomHeader>
       <S.HeaderWrapper>
@@ -15,7 +15,7 @@ export const Header = () => {
         </div>
       </S.HeaderWrapper>
       <S.HeaderInputWrapper>
-        <Input type="text" placeholder="Encontre um restaurante"/>
+        <Input type="text" placeholder="Encontre um restaurante" changeSearch={setSearch}/>
       </S.HeaderInputWrapper>
     </S.CustomHeader>
   )

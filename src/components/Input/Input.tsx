@@ -7,6 +7,7 @@ import * as S from './styles'
 interface Props {
   type: string
   placeholder: string
+  changeSearch: (search: string) => void
 }
 
 export const Input = (props: Props) => {
@@ -15,7 +16,7 @@ export const Input = (props: Props) => {
       <div>
         <FontAwesomeIcon icon={faSearch}/>
       </div>
-      <S.CustomInput {...props} />
+      <S.CustomInput {...props} onChange={(e) => props.changeSearch(e.target.value)}/>
     </S.InputWrapper>
   )
 }

@@ -9,7 +9,7 @@ interface PropsListRestaurant {
 export const ListRestaurant = ({restaurants}: PropsListRestaurant) => {
   return (
     <S.SectionWrapper>
-      { restaurants.map((restaurant) => (<Card restaurant={restaurant} key={restaurant.id}/>)) }
+      { restaurants?.map((restaurant) => (<Card restaurant={restaurant} key={restaurant.id}/>)) }
     </S.SectionWrapper>    
   )
 }
