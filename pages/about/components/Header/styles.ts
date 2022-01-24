@@ -4,7 +4,7 @@ import backGroundImg from '../../../../public/background2.jpeg'
 
 export const HeaderWrapper = style.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: #FFFFFF;
 `
@@ -14,7 +14,7 @@ export const HeaderInputWrapper = style.div`
   justify-content: center;
 `
 export const CustomHeader = style.header`
-  background-image: url(${backGroundImg.src});
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backGroundImg.src});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,9 +37,31 @@ export const CustomButton = style.button`
   top: 30px;
   left: 40px;
   color: #FFFFFF;
+
+  span {
+    margin-left: 4px;
+  }
 `
 export const AvatarImage = style.img`
   width: 119px;
   height: 119px;
   border-radius: 50%;
+  margin-right: 16px;
+`
+export const CustomTitle = style.h2`
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+  margin-bottom: 5px;
+`
+export const CustomSubtitle = style.h3`
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
 `

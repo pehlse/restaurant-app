@@ -7,7 +7,7 @@ export const Header = ({setSearch = (search: string) => {}}) => {
     <S.CustomHeader>
       <S.HeaderWrapper>
         <div>
-          <img src={logo.src} alt="Logo get in"/>
+          <S.HeaderLogo src={logo.src} alt="Logo get in"/>
         </div>
         <div>
           <S.HeaderTitle>Descubra novos sabores</S.HeaderTitle>

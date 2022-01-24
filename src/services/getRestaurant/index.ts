@@ -4,8 +4,7 @@ const GET_RESTAURANT = 'https://605d074f9386d200171ba209.mockapi.io/api/v1/resta
 
 export async function getRestaurant(id: number) {
   try {
-    const { data } = await withKey(`https://605d074f9386d200171ba209.mockapi.io/api/v1/restaurants/${id}`)
-    console.log(data)
+    const { data } = await withKey.get(`${GET_RESTAURANT}${id}`)
     return data.data
   } catch (error) {
     console.log(error)

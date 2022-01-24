@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { Restaurant } from "../../src/models/Restaurant"
 import { getRestaurant } from "../../src/services/getRestaurant"
 import { Header } from './components/Header/Header'
+import { AboutRestaurant } from './components/AboutRestaurant/AboutRestaurant'
 
 const About = () => {
   const router = useRouter()
@@ -11,6 +12,7 @@ const About = () => {
 
   async function onGetRestaurant() {
     const data = await getRestaurant(Number(router.query.id))
+    console.log(data)
     setRestaurant(data)
   }
 
@@ -20,8 +22,8 @@ const About = () => {
 
   return (
     <>
-      <Header />
-      <h1>{restaurant?.name}</h1>
+      <Header restaurant={restaurant} />
+      <AboutRestaurant restaurant={restaurant}/>
     </>
   )
 }

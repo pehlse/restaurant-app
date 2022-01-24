@@ -23,3 +23,9 @@ export const CustomHeader = style.header`
 export const HeaderTitle = style.h1`
   margin-bottom: 6px;
 `
+export const HeaderLogo = style.img`
+  display: none;
+  @media(min-width: 800px) {
+    display: inline;
+  }
+`

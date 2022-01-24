@@ -2,7 +2,6 @@ import styles from 'styled-components'
 
 export const CardWrapper = styles.div.attrs((props: {backGround: string}) => props)`
   height: 170px;
-  width: 350px;
   background-image: url(${(props) => props.backGround});
   border-radius: 8px;
   cursor: pointer;

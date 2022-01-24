@@ -1,10 +1,9 @@
 import style from 'styled-components';
 
 export const ListRestaurantWrapper = style.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 4%;
   padding-bottom: 40px;
 `
 export const TitleRestaurantPage = style.h1`
